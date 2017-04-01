@@ -1,10 +1,10 @@
 'use strict';
 
-var exec = require('child_process').exec;
-var pify = require('pify');
+const exec = require('child_process').exec;
+const pify = require('pify');
 
-var f = function (cb) {
-	exec('ps -e | grep -E \'^.* cinnamon$\'', function (error, stdout) {
+const f = function (cb) {
+	exec('ps -e | grep -E \'^.* cinnamon$\'', (error, stdout) => {
 		if (error) {
 			cb(null, false);
 		}
