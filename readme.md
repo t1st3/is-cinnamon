@@ -15,7 +15,7 @@ $ npm install --save is-cinnamon
 ```js
 const isCinnamon = require('is-cinnamon');
 
-isCinnamon().then(data => {
+isCinnamon.then(data => {
   console.log(data);
   //=> true or false
 });
